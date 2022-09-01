@@ -28,6 +28,6 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/stckoverflw/minecraft-exporter:"$GITHUB_SHA" \
-            ghcr.io/stckoverflw/minecraft-exporter:latest \
+            ghcr.io/stckoverflw/minecraft-exporter:${{ github.sha }}
+            ghcr.io/stckoverflw/minecraft-exporter:latest
           platforms: linux/amd64,linux/arm64
