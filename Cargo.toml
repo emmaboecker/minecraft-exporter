@@ -16,5 +16,5 @@ async-trait = "0.1.57"
 tokio = { version = "1.21.2", features = ["full"] }
 tokio-stream = "0.1.9"
 
-tokio-cron-scheduler = "0.8.0"
+tokio-cron-scheduler = "0.8.1"
 chrono = "0.4.22"
