@@ -517,8 +517,9 @@ dependencies = [
 
 [[package]]
 name = "influxdb2"
-version = "0.3.0"
-source = "git+https://github.com/NyCodeGHG/influxdb2#bcab8a4cdc8342996805ef845387008f57931f06"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1d29159a642530fc02f2b49baeda7ef67457121163a6e430cee71648a2dadd2e"
 dependencies = [
  "base64",
  "bytes",
@@ -549,7 +550,8 @@ dependencies = [
 [[package]]
 name = "influxdb2-derive"
 version = "0.1.0"
-source = "git+https://github.com/NyCodeGHG/influxdb2#bcab8a4cdc8342996805ef845387008f57931f06"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1e007e3c8368af353f58831a0fdb1b6649df4a8f0a33aa6455fc69a896bbc30"
 dependencies = [
  "itertools",
  "proc-macro2",
@@ -561,7 +563,8 @@ dependencies = [
 [[package]]
 name = "influxdb2-structmap"
 version = "0.2.0"
-source = "git+https://github.com/NyCodeGHG/influxdb2#bcab8a4cdc8342996805ef845387008f57931f06"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1408e712051787357e99ff732e44e8833e79cea0fabc9361018abfbff72b6265"
 dependencies = [
  "chrono",
  "num-traits",
@@ -739,7 +742,9 @@ dependencies = [
  "async-trait",
  "chrono",
  "influxdb2",
+ "influxdb2-structmap",
  "mcping",
+ "num-traits",
  "tokio",
  "tokio-cron-scheduler",
  "tokio-stream",
@@ -1381,9 +1386,9 @@ checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
 
 [[package]]
 name = "tokio"
-version = "1.20.1"
+version = "1.21.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a8325f63a7d4774dd041e363b2409ed1c5cbbd0f867795e661df066b2b0a581"
+checksum = "a9e03c497dc955702ba729190dc4aac6f2a0ce97f913e5b1b5912fc5039d9099"
 dependencies = [
  "autocfg",
  "bytes",
@@ -1391,7 +1396,6 @@ dependencies = [
  "memchr",
  "mio",
  "num_cpus",
- "once_cell",
  "parking_lot 0.12.1",
  "pin-project-lite",
  "signal-hook-registry",

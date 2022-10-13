@@ -6,11 +6,14 @@ edition = "2021"
 [dependencies]
 
 mcping = { git = "https://github.com/Scetch/mcping.git", features = ["tokio-runtime"] }
-influxdb2 = { git = "https://github.com/NyCodeGHG/influxdb2", features = ["rustls"], default-features = false }
+
+influxdb2 = { version = "0.3.3", features = ["rustls"], default-features = false }
+influxdb2-structmap = "0.2"
+num-traits = "0.2"
 
 async-trait = "0.1.57"
 
-tokio = { version = "1.20.1", features = ["full"] }
+tokio = { version = "1.21.2", features = ["full"] }
 tokio-stream = "0.1.9"
 
 tokio-cron-scheduler = "0.8.0"
