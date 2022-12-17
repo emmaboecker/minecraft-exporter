@@ -11,7 +11,7 @@ influxdb2 = { version = "0.3.3", features = ["rustls"], default-features = false
 influxdb2-structmap = "0.2"
 num-traits = "0.2"
 
-async-trait = "0.1.58"
+async-trait = "0.1.60"
 
 tokio = { version = "1.21.2", features = ["full"] }
 tokio-stream = "0.1.11"
