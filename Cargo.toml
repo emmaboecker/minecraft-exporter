@@ -7,7 +7,7 @@ edition = "2021"
 
 mcping = { git = "https://github.com/Scetch/mcping.git", features = ["tokio-runtime"] }
 
-influxdb2 = { version = "0.3.3", features = ["rustls"], default-features = false }
+influxdb2 = { version = "0.3.5", features = ["rustls"], default-features = false }
 influxdb2-structmap = "0.2"
 num-traits = "0.2"
 
